@@ -1,0 +1,319 @@
+## 邮箱
+为保证知识传递完整，请阅读本文的所有部分，而不是分节阅读。
+扩展阅读：网络社会工程学防范，密码管理器
+关于 PGP 延伸阅读： https://emailselfdefense.fsf.org/zh-hans/
+
+### 邮箱是什么？有多重要？
+在国外，邮箱相当于国内的手机号，互联网上几乎所有服务都可以通过邮箱来注册和登录（少数私有制大平台只能用手机号码）。
+
+邮件作为一种历史悠久的通讯方式，由于其端对端传输的特点而被广泛运用于私密通讯中。考虑到目前中国大陆常见的通讯设备和软件都存在着严厉的网络监控以及大量网络警察频繁活跃其中，相比之下，具有私密交流性质的网络邮件反而成为了一种相对安全且隐蔽的手段。但使用网络邮箱的行为实质上是将一切安全与隐私寄托于提供网络邮件服务的服务商，希望其能够保障使用者的隐私。
+
+默认情况下，电子邮件是一种不安全的通信形式。你可以使用 PGP 等方式提高安全性，但是改进后的电子邮件与其它通讯方式相比，仍存在许多缺点。
+
+因此，电子邮件最适合用于接收来自在线注册的服务的事务性电子邮件（如通知、账户注册验证、密码重置等）和紧急情况下联系革命组织，而不是用于通讯。
+
+### 邮箱注册
+
+#### 一次性邮箱/临时邮箱
+临时邮箱是一种便利且安全的邮件服务。
+
+注意：
+1. 不要把临时邮箱当作长期邮箱使用。用其注册网站账号，应该在注册后及时将该账号迁移去其它安全邮箱或邮件别名，或设置 两步验证。
+2. 如果使用可以自定义邮箱名的临时邮箱，可以将邮箱名尽可能设置长且复杂，减少他人访问的可能性。
+3. 你应当考虑临时邮箱对邮箱内容的非隐私和非安全性质，谨慎使用它。如合适，应使用邮件别名来代替临时邮箱。
+
+以下是精选的临时邮箱列表，同时列出了该邮箱的功能。
+
+| 临时邮箱网址                            | 自定义邮箱名 | 支持发信 | 备注              |
+| --------------------------------- | ------ | ---- | --------------- |
+| https://www.ogo.codes/zh-cn/      | ✅      | ❌    |                 |
+| https://tempmailpro.org/zh        | ✅      | ✅*   | 发信需要申请，但不需要写申请信 |
+| https://mail.chatgpt.org.uk       | ✅      | ❌    |                 |
+| https://www.linshiguge.com/       | ❌      | ❌    | 临时 Gmail        |
+| https://smailpro.com/             | ❌      | ❌    | 临时 Gmail        |
+| https://www.emailnator.com/       | ❌      | ❌    | 临时 Gmail        |
+| https://linshiyou.com/            | ✅      | ❌    |                 |
+| https://www.linshiyouxiang.net/   | ✅      | ❌    |                 |
+| https://tempmail.plus/zh/         | ✅      | ❌    |                 |
+| https://22.do/                    | ❌      | ❌    | 临时 Gmail        |
+| https://rootsh.com/               | ✅      | ❌    |                 |
+| https://yopmail.com/zh/           | ✅      | ✅*   | 仅支持 YOPmail 间发信 |
+| https://moakt.com/zh/             | ✅      | ✅    |                 |
+| https://www.guerrillamail.com/zh/ | ✅      | ✅    | 支持 Tor          |
+| https://anonymousemail.me/        | ✅      | ✅    |                 |
+| https://www.cs.email/             | ✅      | ✅    | 支持 Tor          |
+| https://www.moakt.com/zh          | ✅      | ✅*   | 不支持发送附件         |
+| https://www.5ymail.com/           | ✅      | ✅    |                 |
+（为什么列出这么多？因为有些收信发信功能有问题，有些不能注册 Proton 邮箱，还有的可能被 GFW 屏蔽了）
+
+另一个临时邮箱列表，我懒得检查了。
+来源： https://t.me/lihai/5696
+
+```
+临时邮箱 
+ https://email.ml （基于开源项目和 CF 搭建，提供三个后缀 email.ml hele.win uxin.tech ）； 
+https://smail.pw  （基于开源项目和 CF 搭建的临时邮箱，后缀 @smail.com）； 
+https://vmail.dev  （Yesmore大佬基于开源项目和 CF 搭建的临时邮箱，后缀 @vmail.dev，新功能可发邮件）； 
+https://email-once.com  （基于开源项目和 CF 搭建的临时邮箱，随机生成前缀；有 4 个后缀；24 小时有效期）； 
+https://mail.tm  和 https://mail.gw  同一作者作品； 
+https://mail.td/ 可选后缀的临时邮箱； 
+https://maildrop.c 可自定义前缀，可同时使用别名邮箱； 
+AdGuard 免费临时邮  （7 天有效期，后缀为 @mailcurity.com，可调整中文）； 
+https://10minutemail.com  随机生成前后缀，默认每次 10 分钟，可在过期前不限次数地续时间，2007 年运营至今的临时邮箱服务；该作者另一个临时邮箱服务为https://temp-mail.org ； 
+https://mailnesia.com/  可自定义前缀、2013 年运营至今的临时邮箱； 
+https://10minutemail.net/  默认每次 10 分钟，可在过期前不限次数地续时间，2014 年运营至今的临时邮箱服务； https://www.snapmail.cc  可自定义前缀、每次有效期 48 小时，2017 年运营至今的临时邮箱服务； 
+https://mailsac.com/  可自定义前缀，后缀为 @mailsac.com 的邮箱； 
+https://www.nowmymail.com/  可定义前缀、2019 年运营至今的免费临时邮箱； 
+https://www.moakt.com/  可定义前缀和后缀，每次 60 分钟有效时长，可扩展时长； 
+https://www.guerrillamail.com/  可自定义前缀，每次 60 分钟有效时长； 
+https://linshiyou.com/  （可自定义前缀，有两个后缀可选）和 22.do 9 （两个服务为同一作者的作品，后者可提供临时 Gmail 邮箱）；
+https://yopmail.com/  5 天临时邮箱； 
+https://www.mohmal.com  可自定义前后缀的、有效期 45 分钟的临时域名邮箱； 
+https://dropmail.me/  可同时生成多个后缀域名邮箱，提供别名邮箱服务；邮箱有效期取决于页面打开时长； 
+https://tempmail.plus/  可自定义前缀，有 9 个后缀可选；可收发邮箱； 
+https://inboxes.com/  （原 Nada 临时邮箱）可自定义前缀，有 19 个后缀可选； 
+https://linshiyouxiang.net/  十秒钟内收到邮件，可自定义前缀、后缀； 
+https://tempmail.altmails.com/  临时邮箱，可设置为中转邮箱； 
+https://mailnesia.com/  便捷的匿名邮箱，可自定义前缀，后缀为 @Mailnesia.com； 
+https://tempmailbox.net/  可定义前缀，有两个后缀可选； 
+https://smailpro.com/  可生成 Gmail 临时邮箱； 
+https://www.emailnator.com/  可生成 Gmail 临时邮箱和其他域名邮箱（感谢这位Linuxdoer反馈）; 
+https://www.emailondeck.com/  随机前缀，付费版可长期使用； 
+https://www.disposablemail.com/  有效期最长 2 周； 
+https://spambox.xyz/  可自定义前缀，有 4 个后缀可选； 
+https://mailgolem.com/  随机生成前缀，后缀为 @mailgolem.com ； 
+https://mailpoof.com/  前缀可自定义，后缀为 @mailpoof.com； 
+https://www.crazymailing.com/  随机生成前缀的临时邮箱； 
+https://edumail.icu/  可生成临时教育邮箱； 
+https://etempmail.com/  带edu.pl 的临时教育邮箱； 
+https://www.linshi-email.com/  有效期 10 分钟的临时邮箱； 
+https://mail.xiuvi.cn/ 可自定义前缀； 
+https://ihotmails.com/  可自定义前缀，按钮设计有待优化； 
+https://temp-email.dreamhunter2333.xyz/  半自定义前缀；附开源代码，适合自建参考； 
+https://internxt.com/temporary-email  由云盘服务 Internxt 提供的，随机生成前缀，3 个后缀域名的临时邮箱服务； https://tempail.com/en/  2008 年运营至今，随机生成前缀，有效期 1 小时； 
+https://tempmailo.com/  随机生成前缀，两个后缀随机出现； 
+https://temp-mail.io/en  可随机前缀、可自定义前缀，12 个后缀可供选择；可转发到自己的邮箱，有效期可自定义。 https://luxusmail.org/  可自定义前缀，6 个后缀可供选择； 
+https://www.throwawaymail.com/en  随机生成前缀； 
+https://vmail.dev/ 随机生成前缀。 
+
+谷歌邮箱 
+https://smailpro.com/ 谷歌邮箱 
+https://www.emailnator.com/ 谷歌邮箱 
+https://22.do/ 谷歌邮箱 
+https://www.emailnator.com/ 谷歌邮箱 
+
+中转邮箱 
+https://duckduckgo.com/email/  （邮箱后缀@duck.com） 
+https://addy.io/  原 anonaddy.com 
+https://relay.firefox.com/  
+https://simplelogin.io/  
+https://improvmx.com/ 
+https://33mail.com/  
+https://burnermail.io/ 本文原创edumails
+
+#转载 #邮箱 #合集
+
+补充一个临时邮箱https://www.suiyongsuiqi.com/zh/mail/
+可自定义前缀
+```
+
+#### 隐私邮箱
+
+##### Proton（不建议）
+Proton 邮箱注册流程：
+设置邮箱名和密码 → 人机验证 → 电子邮件验证 → 注册成功，配置邮箱
+
+注册链接： https://account.proton.me/zh-tw/start
+邮箱入口： https://mail.proton.me/u/0/inbox
+邮箱 Tor 网址： https://protonmailrmez3lotccipshtkleegetolb73fuirgj7r4o4vfu7ozyd.onion/
+
+建议邮箱域名（在 设置邮箱名 的那步）使用 proton.me 而非 protonmail.com ，前者更常用。
+电子邮件验证的一步可以使用临时邮箱。禁止使用所有的墙内邮箱，包括 Microsoft 的 outlook 邮箱和 hotmail 邮箱和俄罗斯的 Yandex 邮箱。
+
+注册成功后，应该配置邮箱加强安全性，包括：
+1. https://account.proton.me/u/0/mail/recovery 在 账户恢复 界面设置恢复方式。（当然，不要设置 密保手机）
+2. https://account.proton.me/u/0/mail/account-password 在 账户与密码 界面设置 双因素身份验证 和 双密码模式。
+3. https://account.proton.me/u/0/mail/security 在 安全与隐私 关闭 账户监测 和 隐私与数据收集。
+4. https://account.proton.me/u/0/mail/email-privacy 在 电子邮件隐私 关闭 自动显示外链图像
+
+除此之外，你也可以在 https://account.proton.me/u/0/mail/subscription 页面关闭各种邮件订阅。
+
+注意：
+1. Proton 免费账户不活动一年可能会删除。
+2. 不建议的原因：⚠️Proton AG 曾经向 FBI 透露过用户付款信息。它们并不隐私⚠️
+
+##### Tutanota
+Tuta 的注册流程与 Proton 相似但又有异。Tuta 邮箱注册流程：
+设置邮箱名和密码 → 人机验证 → 注册成功，配置邮箱
+
+注册链接： https://app.tuta.com/signup?websiteLang=zh-hans
+
+注册成功后，应该配置邮箱加强安全性，包括：
+1. https://app.tuta.com/settings/login 在 两步验证 界面设置两步验证，同时保存你的 恢复码。
+
+注意：
+1. 在注册过程中，Tuta 的人机验证不成功，可能是因为你所用的 IP 之前已经注册了几个 Tuta 账户而禁止创建新账户。你需要更换 IP 重新注册。
+2. 在注册结束后，Tuta 可能因为你的 IP 而禁止该邮箱 24 小时内的收发信。
+3. 如果你想注册多个（大于等于 2 个）Tuta 账户，那么你的 Tuta 账户可能未经通知删除，无法恢复。（这是 Tuta 的隐性政策）
+4. Tuta 免费账户不活动半年会被删除。
+
+
+##### 其它隐私邮箱
+你可以阅读这些内容，但这些邮箱可能不安全和隐私：
+https://www.httpsmail.com/tags/加密邮箱
+https://www.httpsmail.com/tags/暗网邮箱
+https://www.httpsmail.com/tags/安全邮箱
+https://www.httpsmail.com/tags/匿名邮箱
+
+#### 常用墙外邮箱：Gmail
+为什么在最后还会提到这些非隐私、匿名的墙外邮箱？因为其历史悠久、使用广泛，大部分的网站会屏蔽临时邮箱乃至使用邮箱白名单制，但不会屏蔽它们。如果你想要使用这些邮箱，那么自行注册是很难的，因为大概率 IP 不干净，只能在他人手中购得账户。
+
+注意：
+1. 不要将其作为敏感活动用的邮箱。
+2. 不是所有的非中国大陆的邮箱都是可用的，例如 Microsoft 的 outlook、hotmail，Yahoo，Yandex 等邮箱是不应该作为墙外邮箱用的。
+
+### 邮件别名
+
+电子邮件别名服务 提供邮件别名，它相当于你有了多个电子邮箱，这些邮箱所收到的邮件会转发到你的主要邮箱，这样你就可以在不泄漏主要邮箱的情况下注册互联网服务。
+
+duck.com 邮箱网址： https://duckduckgo.com/email
+注册流程： 设置个人别名→设置主要邮箱（即第①邮箱）→主要邮箱收信，注册成功
+使用流程，即生成私密别名的流程：打开浏览器扩展（移动端是打开 Duckduckgo 浏览器） → 生成别名（点击“Generate Duck Address”，移动端点击 三个点 的图标就可以看到）
+duck.com 邮箱特点：
+- 完全免费
+- 无限随机别名
+- 可匿名回复邮件
+
+在使用前，你需要在你的浏览器上安装 Duckduckgo 的浏览器扩展。如果你是手机，那么安装扩展是没有用的，此时你需要在手机上安装 Duckduckgo 浏览器。
+Duckduckgo 浏览器下载（Android）： https://f-droid.org/packages/com.duckduckgo.mobile.android/
+或
+https://github.com/duckduckgo/Android
+
+注意：
+1. duck 邮箱会对接收的邮件有垃圾邮件过滤器，有时候会无法收到某些网站的邮件（例如工农解放社的论坛）。
+2. duck 邮箱的停用方式：直接点击收件的横幅的“Deactivate”（停用）按钮即可。
+3. 注意你用的是私密别名还是个人别名！你应该使用私密别名注册账户，它的格式应该是这样：
+`land-she-pod@duck.com`
+4. duck 邮箱只能通过主要邮箱来登录和转移。如果你的主要邮箱无法访问，则你的 duck 邮箱就再也不能使用了。
+
+除此之外，你也可以使用以下服务商：
+addy.io 网址： https://addy.io
+SimpleLogin 网址： https://simplelogin.io
+AliasVault 网址： https://aliasvault.net
+
+### Delta Chat
+Delta Chat 是一个基于电子邮件的开源的端到端加密即时通讯方案。它是全平台的。
+简单的说，它可以像普通的聊天软件一样聊天，也可以收发电子邮件。
+它支持像 Telegram 一样的私聊、群聊（以很特殊的形式）和频道。
+
+你可以阅读其官网的教程和文档来学会使用它。
+Delta Chat 官网： https://delta.chat/zh_CN/
+
+ArcaneChat 是基于 Delta Chat 的第三方版本，实际上可以看作是 Delta Chat 的 Beta 版。在这一版本上添加了许多新功能。
+只支持 Android。
+ArcaneChat 官网： https://arcanechat.me/
+
+### 邮箱使用安全事项
+1. 你需要多个邮箱来实现身份隔离，即便你使用了邮件别名。包括以下邮箱：
+①墙外使用别名注册各种账户用的邮箱，可以是任一**安全**邮箱。
+②墙外不能使用别名注册用的邮箱，可以是 Gmail 或 Yahoo。
+③与墙外用户联络的邮箱，可以是任一**墙外**邮箱。
+④与革命组织联络的邮箱，应该是与①②③不同的邮箱。
+除此之外，你可能还需要注册或绑定墙内账户的邮箱，qq 等墙内邮箱就可以。
+身份隔离需要你：
+- 每一网站账户都要使用不同的邮件别名。
+- 在注册、在网站上交流和通过电子邮件通讯时不提及你的其它邮箱及相关账户。
+2. 邮箱账户设置两步验证，关闭所有能关的信息搜集（包括为了安全而搜集的登录 IP 地址），
+3. 不要付款。
+4. 电子邮件阅后即焚（不是移入垃圾桶）
+5. （可选）通过 PGP 加密邮件。
+6. 不要为邮箱设置 密保手机，即使像 Gmail 一样不需要接收验证码的绑定也不可以。
+7. 不得无前置代理地从中国大陆访问从①到④的邮箱。
+8. 为了防范潜在的攻击，关闭默认的 HTML 格式，使用纯文本渲染正文。
+
+### 邮件客户端
+FairEmail（Android）： https://github.com/M66B/FairEmail
+Thunderbird（全平台）： https://thunderbird.net
+Apple Mail （MacOS）
+Kontact （Linux-KDE）
+GNOME Evolution （Linux-GNOME）
+Mailvelope（浏览器扩展）： https://mailvelope.com/
+
+### OpenPGP 快速教程
+要比较彻底地确保邮件信息安全，只是使用比较可靠的邮箱也是不够的。例如在发生邮箱传输漏洞的情况下，邮件有可能被截取、篡改，甚至传输遭遇中间人攻击。为了进一步增强使用邮箱时的安全性，简要说明 OpenPGP 加密技术，并以 Proton 邮箱为例， 示范如何正确使用 Proton 搭配邮件加密技术以进一步保障通信秘密。
+
+OpenPGP 来自于 PGP 加密程序，是一种公有领域的数据检验和加密标准，它的加密基于**不对称加密**技术。以下将简单介绍其工作原理：
+首先通过数学方法计算出一对有一定数学联系的**公私钥**，私钥秘密**存放在本地并通常由密码保护**，公钥可以**公开**。A 给 B 发送不对称加密的信息时，首先从公开的**公钥服务器**上找到 B 的公钥，用 B 的公钥运算出自己的信息密文，并在信息当中附上由 A 的私钥（可能还有公钥，取决于具体算法）和信息明文的**哈希值**运算得出的 A 的**数字签名**。B 在接收到信息后，发现这是不对称加密的信息，于是使用 B 的私钥运算出信息明文，使用 A 的公钥（同样也是公开的）从数字签名运算出 A 的信息哈希值并将这个哈希值同自己从明文独立计算的哈希值**比较**，确认信息来自 A 且**没有被篡改**。
+在以上的过程中，只要公开了公钥，双方就可以安全地通信，而由于上述过程中涉及的数学算法的良好性质，任何截获了密文的第三方想要不经过对应钥匙逆向以上任一过程都只能暴力穷举，合理时间内完全不可能。在一段时间的广泛使用后，OpenPGP 成为了几乎所有电子邮件的加密标准。
+
+通常，术语 GnuPG, GPG, GNU Privacy Guard, OpenPGP 和 PGP 可以互换其称呼。
+
+注意：
+1. **私钥泄露**将导致所有用此公私钥对发送的信息**全部泄密**，应该确保所用设备环境安全。对私钥，尤其是本地的私钥采取**同重要密码同级的保护**措施。如已泄露，应当立即**重新生成**新公私钥对，并使用**撤销证书通知**联系人此变更。
+2. 即便你加密了邮件，邮件**主题**也可能是不受加密的，因此请在邮件客户端中开启主题加密。发送人和接收人的邮件地址、发送时间、IP 路由信息等**邮件头**内容是不会经过加密的。同时，监控系统知道你使用了 PGP，即便它不知道你在说什么。
+
+首先根据平台下载不同的 PGP 客户端：
+Android：[OpenKeychain](https://github.com/open-keychain/open-keychain)
+Windows：[Gpg4win](https://www.gpg4win.org/)（Kleopatra 是其前端）
+iOS/MacOS： https://ipgmail.com/
+（关于 iOS 和 MacOS，因为我没有相关设备，无法修正这一部分。据说 ipgmail 陈旧，可以用 GPG Suite 代替。
+全平台：[GNU Privacy Guard](https://gnupg.org/download/index.html)
+
+#### Proton PGP 密钥导出
+在 https://account.proton.me/u/0/mail/encryption-keys 导出你的 Proton 账户的公钥和私钥。私钥在 OpenKeychain 上使用“从文件导入密钥”保存。
+
+Proton 邮箱会在注册后生成两个公私钥对，一个验证登陆，一个加密邮件。可以在邮箱内的Settings → All settings → Proton Mail → Encryption and keys选项中进行管理。
+
+Proton 邮箱间收发件不需要附上你的公钥，Proton 会自动附上。但对于非 Proton 的邮箱，尤其是收件人还在墙内，不能访问公钥服务器怎么办？
+在第一封未加密的邮件的附件中附上公钥即可，记得不要 PGP 加密。Proton 通过选择“Attach public key”可以附上公钥。
+
+#### Android 上使用
+创建密钥流程：创建密钥→设置联络名→设置主邮件地址（使用你的发信邮箱，可以是duck 别名）→可以选择上传至密钥服务器->完成
+PGP 常见使用方式：
+①邮件加密
+在电子邮件客户端导入 OpenPGP 密钥，发送时在邮件中附上公钥即可。
+对方回信也应该使用 PGP 加密邮件。可以使用在线网站 https://pgptool.org 来生成公私钥。
+②签名
+GnuPG 提供了对消息或文件签名的方式，验证它们的确来自于你，并且始终未被篡改。
+③签署密钥
+PGP 只能保证安全，但是不能确认对方是谁。签署密钥 相当于联名书，签署者越多就代表密钥越可信。通常，对自己邮件进行签名是一种良好行为，但随意签署别人的公钥，最终你会意外地为冒充者做了担保。密钥的指纹可以确认其对应使用的公钥，签署时应该要求查看指纹而不只是短 key ID。
+
+密钥服务器间会按一定时间间隔自动同步公钥，不需要手动上传至多个密钥服务器。
+撤销证书是私钥被盗后宣告吊销的唯一方式，请备份好它。
+
+公钥的文本格式：
+```
+-----BEGIN PGP PUBLIC KEY BLOCK-----
+
+mDMEaEaXwRYJKwYBBAHaRw8BAQdA74XV0SqGEYcfn5gnABi+W6yNVuDfd1TNLQrh
+8fVlN2gyYjFhN2gzY0Bwcm90b24ubWUgPDVlN2gyYjFhN2gzY0Bwcm90
+b24ubWU+iNEEExYKAIMFgmhGl8EDCwkHCZBh6zJg5EAGEkUUAAAAAAAcACBzYWx0
+QG5vdGF0aW9ucy5rvcGVucGdwanMub3Jn0TFZMtEwBRGPvX7SYT7d+ciI2zUDFQoIBBYAAgECGQECmwMCHgEWIQSKniY24oXsxNeEZABh6zJg5EAG
+EgAADToBAJv/AhtjvKAxLuBksu/oOlT0qRMfSGAsxFuUB3m1CpWiAQDILMHxZQy2
+Kw4wauEAbHPTQvH9ehh6G9jQRezLP7dCDLg4BGhGl8ESCisGAQQBl1UBBQEBB0DM
+nxNl0dDk7OdrAH2zxZYTdTUkq6TGwiAhTJKtgp0uHQMBCAeIvgQYFgoAcAWCaEaX
+wQmQYesyYORABhJFFAAAAAAAHAAgc2FsdEBub3RhdGlvbnMub3BlbnBncGpzLm9y
+ZyEHzE/nM40yESQgTxi0GSjXoloIMYk2Js7bYrYKPtGxApsMFiEEip4mNuKF7MTX
+hGQAYesyYORABhIAAMnbAP0XRB1lJfK0LlKmlCMQJfkiAmL0CpDDGaX34tY5MLLh
+kwD+KIV4zgCk4w+vZd3y2SBZLldiZKMk/EwjXg3mhg4=
+=a+jT
+-----END PGP PUBLIC KEY BLOCK-----
+
+```
+公钥也可以是 .asc 格式的文件。
+导出的加密的私钥是文件，格式是 .sec.pgp 。
+公钥的指纹格式：`F357AA1A5B1FA42CFD9FE52A9FF2194CC09A61E8`
+
+#### Windows、Linux 和 iOS/MacOS
+和 Android 同理。
+
+### 邮件发送 邮箱使用问题杂谈
+#### 什么是抄送（CC） 和 密送（BCC）？ 
+二者都是和电子邮件群发相关的功能，但两者在收件人可见性上存在区别。
+
+抄送（CC，Carbon Copy）：所有收件人都能看到收件人名单。适合用于团队协作时，确保相关人员知晓邮件内容的同时可以互相联络。
+密送（BCC，Blind Carbon Copy）：收件人无法看到收件人名单。适用于向大量收件人发送邮件时避免暴露邮箱地址。
+
+历史上革命组织曾经因为这个问题上犯过错误，引发了严重的安全问题：
+> https://telegra.ph/反动派牛肉堡捣乱失败百日纪念-02-13
+
