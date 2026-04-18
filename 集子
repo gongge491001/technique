@@ -1,0 +1,357 @@
+## 集子
+按照门类整理，同时包括之前写作的部分。
+这个集合不会包括所有的我认为优秀的开源软件，事实上它只会包括所有革命者所需要的软件。
+
+### Android 软件
+其中前标🏷的是推荐的，前标✖️的是闭源的，前标❓的是开源但停止更新/长期不更新的。
+链接优先使用 Github 链接，即使 Github 上没有发行版。没有的使用官网链接。如果官网难以下载，则使用其它链接，如 F-Droid。
+
+1. 浏览器
+Chromium 系：
+🏷[Brave](https://www.brave.com)
+
+Firefox 系：
+🏷[Tor Browser](https://www.torproject.org)
+迄今为止，唯一可称得上隐私、安全和匿名的浏览器。
+🏷[IronFox](https://gitlab.com/ironfox-oss/IronFox)
+Firefox 系的 Brave，类 Iceraven
+
+其它隐私向的浏览器可参考 [FFUpdater](https://github.com/Tobi823/ffupdater)
+
+2. 翻译
+✖️🏷[Google 翻译](https://play.google.com/store/apps/details?id=com.google.android.apps.translate)
+[Translate You](https://github.com/you-apps/TranslateYou)
+🏷[词悦](https://github.com/mumu-lhl/Ciyue)
+mdict 词典
+
+3. 图库/图片浏览器
+🏷[Aves](https://github.com/deckerst/aves)
+这个图库也可以查看、编辑（部分）和去除图片元数据。
+[Fossify Gallery](https://github.com/FossifyOrg/Gallery)
+
+4. 相机/拍照
+✖️🏷[Pixel 相机](https://play.google.com/store/apps/details?id=com.google.android.GoogleCamera)
+[Fossify Camera](https://github.com/FossifyOrg/Camera)
+❓[Open Camera](https://opencamera.org.uk/)
+🏷[GrapheneOS Camera](https://github.com/GrapheneOS/Camera)
+[拍安箱](https://github.com/SecureCamera/SecureCameraAndroid)
+
+5. 应用商店
+F-Droid：
+[F-Droid 和 F-Droid Basic](https://gitlab.com/fdroid/fdroidclient)
+[Neo Store](https://github.com/NeoApplications/Neo-Store)
+🏷[Droid-ify](https://github.com/Droid-ify/client)
+
+🏷[Aurora Store](https://gitlab.com/AuroraOSS/AuroraStore)
+支持在无账号、无 Google 套件的情况下使用 Play Store。
+🏷[Obtainium](https://github.com/ImranR98/Obtainium)
+可以跟踪在 Github 等地方分发的应用的更新。
+
+6. 文件管理/文件浏览器
+❓[质感文件](https://github.com/zhanghai/MaterialFiles)
+❓[Amaze 文件管理器](https://github.com/TeamAmaze/AmazeFileManager)
+[Fossify File Manager](https://github.com/FossifyOrg/File-Manager)
+✖️[ZArchiver](http://zdevs.ru/)
+
+7. 软件安装器
+🏷[InstallerX Revived](https://github.com/wxxsfxyzm/InstallerX-Revived)
+InstallerX 的重制版。可以在国产手机绕过防诈安装安装包，还支持安装包删除、软件卸载器、模块安装等。
+其中 online 版本支持直接分享下载直链到 InstallerX 进行安装，除此之外无区别。
+
+8. AI
+🏷[AI Hub](https://github.com/SilentCoderHere/aihub)
+通过 Webview 使用网页端的 AI。
+🏷[RikkaHub](https://github.com/rikkahub/rikkahub)
+类似 Chatbot 的大模型聚合对话工具。
+
+9. 写作与笔记
+[Standard Notes](https://github.com/standardnotes/app)
+🏷[Markor](https://github.com/gsantner/markor)
+Markdown、TXT 编辑器。
+[SiYuan](https://github.com/siyuan-note/siyuan-android)
+[Saber](https://github.com/saber-notes/saber)
+手写笔记
+
+10. 元数据清理（仅图片）
+🏷[Imagepipe](https://codeberg.org/Starfish/Imagepipe)
+只需分享图片到此即可清理元数据，也有图片编辑功能
+
+11. 图片编辑
+[Image Toolbox](https://github.com/T8RIN/ImageResizer)
+
+12. 音频播放器
+[Fossify Music Player](https://github.com/FossifyOrg/Music-Player)
+
+13. 链接清理
+🏷[URLCheck](https://github.com/TrianguloY/UrlChecker)
+
+14. 阅读器/图书阅读
+[Anx Reader](https://github.com/Anxcye/anx-reader)
+AI 驱动的开源电子书阅读器。
+[KOReader](https://github.com/koreader/koreader)
+墨水屏阅读器
+[Librera Reader](https://github.com/foobnix/LibreraReader)
+
+15. 输入法
+🏷[说点啥](https://github.com/BryceWG/BiBi-Keyboard)
+语音输入法，支持本地和网络 AI 识别。
+🏷[小企鹅输入法](https://github.com/fcitx5-android/fcitx5-android)
+[Trime](https://github.com/osfans/trime)
+✖️[Gboard](https://play.google.com/store/apps/details?id=com.google.android.inputmethod.latin)
+
+16. 部分应用（墙内+墙外）开源第三方客户端或替代版介绍
+Bilibili/b站：
+🏷[PiliPlus](https://github.com/bggRGjQaUbCoE/PiliPlus)
+[BiliPai](https://github.com/jay3-yy/BiliPai)
+[bilimiao](https://github.com/10miaomiao/bilimiao2)
+
+知乎：
+🏷[Hydrogen](https://github.com/zhihulite/Hydrogen)
+[知乎Plus](https://github.com/zly2006/zhihu-plus-plus)
+
+贴吧：
+🏷[贴吧 Lite](https://github.com/zzc10086/TiebaLite)
+不是 https://github.com/HuanCheng65/TiebaLite
+
+X/Twiiter，Mastodon，Bluesky，Misskey，Nostr，Pixelfed（部分），Sharkey（部分）：
+🏷[Flare](https://github.com/DimensionDev/Flare)
+社交媒体聚合客户端。
+
+Youtube：
+🏷[PipePipe](https://github.com/InfinityLoop1308/PipePipe)
+同时也支持 Bilibili/b站 浏览。
+[NewPipe](https://github.com/TeamNewPipe/NewPipe)
+[FreeTube Android](https://github.com/MarmadileManteater/FreeTubeAndroid)
+
+Telegram：
+⚠️Nekogram、Cherrygram 第三方版本 2026 年被曝出有收集并上传用户电话号码的情况。请避免使用它们！建议不要使用第三方客户端！⚠️
+[Forkgram](https://github.com/Forkgram/TelegramAndroid)
+Telegram 去除私有组件的版本。不能注册账户。
+[Nagram X Fork](https://github.com/risin42/NagramX)
+
+播客：
+[AntennaPod](https://antennapod.org)
+
+XMPP：
+🏷[monocles chat](https://codeberg.org/monocles/monocles_chat)
+Conversations 的修改版，功能多样，但有时有些小故障。
+🏷[Conversations](https://codeberg.org/iNPUTmice/Conversations)
+
+Matrix：
+🏷[FluffyChat](https://github.com/krille-chan/fluffychat)
+支持多账户。
+[SchildiChat Legacy](https://github.com/SpiritCroc/SchildiChat-android)
+消息列支持。
+
+Misskey：
+[Aria](https://github.com/poppingmoon/aria)
+
+Lemmy：[Interstellar](https://github.com/interstellar-app/interstellar)
+Pixelfed：[Pixelix](https://github.com/ghostbyte-dev/pixelix)
+Mastodon：[Fedilab](https://codeberg.org/tom79/Fedilab)
+网易云音乐：[BuJuan](https://github.com/2697a/bujuan)
+落雪音乐 Fork：iKun Music Fork：[LX-N Music](https://github.com/souvenp/lx-netease-music-mobile)
+音乐客户端（代替 Youtube Music，Spotify 等）： [Echo](https://github.com/brahmkshatriya/echo)
+
+17. 天气
+🏷[Breezy Weather](https://github.com/breezy-weather/breezy-weather)
+
+18. 会议
+🏷[Jitsi Meet](https://github.com/jitsi/jitsi-meet)
+
+19. 文档编辑器和浏览器
+[OnlyOffice](https://play.google.com/store/apps/details?id=com.onlyoffice.documents)
+
+LibreOffice：
+[LibreOffice Viewer](https://f-droid.org/zh_Hans/packages/org.documentfoundation.libreoffice/)
+[OpenDocument 阅读器](https://github.com/opendocument-app/OpenDocument.droid)
+
+20. 局域网文件同步与共享
+🏷[Syncthing-Fork](https://github.com/researchxxl/syncthing-android)
+据说有明网的服务器进行同步。
+🏷[LocalSend](https://github.com/localsend/localsend)
+🏷[Sharing](https://github.com/Ammar64/Sharing)
+
+21. 文件分享
+✖️[Resilio Sync](https://play.google.com/store/apps/details?id=com.resilio.sync)
+类似 BT 的文件同步工具（很难称为“分享”）。
+
+这些需要服务端一直在线。
+[Onion Share](https://github.com/onionshare/onionshare-android)
+[iyox Wormhole](https://github.com/iyox-studios/iyox-Wormhole)
+[croc](https://github.com/howeyc/crocgui)
+
+22. 邮件客户端
+[Thunderbird](https://github.com/thunderbird/thunderbird-android)
+🏷[Tuta Mail](https://github.com/tutao/tutanota)
+Tuta 的官方 Android 客户端
+🏷✖️[Proton Mail](https://play.google.com/store/apps/details?id=ch.protonmail.android)
+Proton 邮箱 的官方 Android 客户端。（它迟迟不支持 F-Droid，社区要求好几年了，能做 AI 不能做开源）
+[FairEmail](https://github.com/M66B/FairEmail)
+
+23. RSS
+[Feeder](https://github.com/spacecowboy/Feeder)
+🏷[Read You](https://github.com/Ashinch/ReadYou)
+
+24. 下载管理器 和 BT 下载器
+[LibreTorrent](https://gitlab.com/proninyaroslav/libretorrent)
+❓[Download Navi](https://github.com/TachibanaGeneralLaboratories/download-navi)
+[Gopeed](https://gopeed.com)
+
+25. 学习和自我管理相关
+[Goodtime](https://github.com/goodtime-productivity/Goodtime)
+番茄钟
+[Fossify Calendar](https://github.com/FossifyOrg/Calendar)
+本地日历，时间规划
+[Simple Time Tracker](https://github.com/Razeeman/Android-SimpleTimeTracker)
+时间记录
+[AnkiDroid](https://github.com/ankidroid/Anki-Android)
+Anki 闪卡
+[Tasks](https://github.com/tasks/tasks)
+[WHPH • Work Hard Play Hard](https://github.com/ahmet-cetinkaya/whph)
+两个都是任务管理
+
+
+26. 二维码生成和扫描
+[条码扫描器](https://gitlab.com/Atharok/BarcodeScanner)
+在扫描超大二维码时有 Bug
+[Binary Eye](https://github.com/markusfisch/BinaryEye)
+
+27. 密码管理器
+[Bitwarden](https://github.com/bitwarden/android)
+🏷[KeePassDX](https://github.com/Kunzisoft/KeePassDX)
+[Keepass2Android](https://play.google.com/store/apps/details?id=keepass2android.keepass2android)
+比 KeepassDX 多支持了云同步。
+
+29. 邮件别名
+[addy.io](https://github.com/anonaddy/addy-android)
+🏷[DuckDuckGo Privacy Browser](https://github.com/duckduckgo/Android)
+❓[SimpleLogin](https://github.com/simple-login/Simple-Login-Android)
+Proton 类似的应用还有 [Proton Pass](https://github.com/protonpass/android-pass)
+[AliasVault](https://github.com/lanedirt/AliasVault)
+
+30. 自托管加密货币钱包
+🏷[Cake Wallet](https://github.com/cake-tech/cake_wallet)
+
+31. VPN、Tor 和代理工具
+[NymVPN](https://github.com/nymtech/nym-vpn-client)
+[迷雾通/Geph](https://geph.io/zhs)
+[ProtonVPN](https://github.com/ProtonVPN/android-app)
+
+[Orbot](https://gitlab.torproject.org/legacy/gitolite/orbot/)
+最简单使用 Tor 的方式
+🏷[InviZible Pro](https://github.com/Gedsh/InviZible)
+Tor、i2p、DNSCrypt 支持
+
+[NekoBox](https://github.com/MatsuriDayo/NekoBoxForAndroid)
+[Karing](https://github.com/KaringX/karing)
+[Hiddify](https://github.com/hiddify/hiddify-app)
+[FlClash](https://github.com/chen08209/FlClash)
+[Clash Meta for Android](https://github.com/MetaCubeX/ClashMetaForAndroid)
+
+32. 加密和 PGP
+[OpenKeychain](https://github.com/open-keychain/open-keychain)
+
+[Secret Space Encryptor (SSE)](https://gitlab.com/paranoia-works/secret-space-encryptor-for-android)
+[Photok](https://github.com/leonlatsch/Photok)
+本地图片加密储存
+[EDS Lite](https://play.google.com/store/apps/details?id=com.sovworks.edslite)
+在 Android 上查看、使用和生成 Veracrypt 加密卷。
+[魔曰](https://github.com/SheepChef/Abracadabra)
+加密中文文本，使敏感文本得以过审查（也有加密的功能）
+
+[Amarok](https://github.com/deltazefiro/Amarok-Hider)
+功能类似于墙内手机的“隐私空间”——只是不能看见，而非安全。
+
+33. 安全
+❓🏷[Wasted](https://github.com/x13a/Wasted)
+多种自毁方式支持：解锁时间，伪装应用，USB 访问，快捷块。
+❓[Shelter](https://gitea.angry.im/PeterCxy/Shelter/)
+通过工作空间实现应用隔离。
+❓[Insular](https://gitlab.com/secure-system/Insular)
+炼妖壶 去除私有组件的版本。通过工作空间实现应用隔离。
+❓[Duress](https://github.com/x13a/Duress)
+输入自毁密码后自毁
+❓[Sentry](https://github.com/x13a/Sentry)
+收到通知中的暗号后自毁
+❓[元萝卜](https://github.com/Katana-Official/SPatch-Update)
+应用分身
+[MemoryGuardian](https://github.com/hashemi-hossein/memory-guardian)
+剪贴板清理。注意，该软件清理的是 Android 系统的剪贴板，不包括 小企鹅输入法 的剪贴板。
+
+34. 加密即时通讯
+本部分不作推荐，只是列出 加密的即时通讯软件 和 马列毛主义者常用的加密即时通讯软件。
+
+XMPP：略
+Matrix：略
+
+[SimpleX](https://simplex.chat/)
+最加密和隐私的即时通讯软件。但仍存在一些用户使用方面的问题。
+[Session](https://getsession.org/)
+[Briar](https://briarproject.org/)
+通过局域网（Wi-Fi）、蓝牙和 Tor 通讯。断网时可能有用。保持长时间通讯需要结合 [Briar Mailbox](https://briarproject.org/) 使用。
+
+[Signal](https://signal.org)
+需要手机号码注册和登录。
+[Langis](https://github.com/TheCapsLock/langis)
+Signal 的去 Google 版本。包名和 Signal 官版重复。
+[Molly](https://github.com/mollyim/mollyim-android)
+Signal 隐私加强版。
+
+35. ROOT 模块
+🏷[Shizuku](https://github.com/RikkaApps/Shizuku)
+不是刷机。
+
+⚠️刷机有风险
+
+36. 两步验证
+[Aegis](https://github.com/beemdevelopment/Aegis)
+[Ente Auth](https://github.com/ente-io/ente/)
+[Stratum](https://github.com/stratumauth/app)
+
+37. 录音机
+[Fossify Voice Recorder](https://github.com/FossifyOrg/Voice-Recorder)
+❓[Audio Recorder](https://github.com/Dimowner/AudioRecorder)
+功能更多。
+
+38. Google 图库的替代：
+Google 相册的替代应用，功能是同步和备份相册，有的需要自建。
+
+[Ente Photos](https://github.com/ente-io/ente)
+免费账户有 10GB 的容量
+[Les Pas](https://github.com/scubajeff/lespas)
+基于 Nextcloud
+[Immich](https://github.com/immich-app/immich)
+基于 Immich
+
+39. 其它
+❓[哔哩发评反诈](https://github.com/freedom-introvert/biliSendCommAntifraud)
+[Geo Share](https://github.com/jakubvalenta/geoshare)
+可把墙内地图链接转换为无跟踪的地图表示方式。
+[Share Paste O2](https://github.com/nain-F49FF806/sharepaste.oo)
+快速分享文本到 PrivateBin，可设置所有的 PrivateBin 参数。
+[Unitto](https://github.com/sadellie/unitto)
+计算器
+[Converter NOW](https://github.com/ferraridamiano/ConverterNOW)
+单位转换
+
+🏷[本地保存（Save Locally）](https://github.com/MateusRodCosta/Share2Storage)
+🏷[保存副本（Save a copy）](https://github.com/RikkaApps/SaveCopy)
+两个应用功能相似，建议都安装。功能：打开文件转保存文件。
+
+[BILIBILIAS](https://github.com/1250422131/bilibilias)
+下载 Bilibili/b站 的视频。
+❓[Round Sync](https://github.com/newhinton/Round-Sync)
+文件同步工具，支持多种网盘、Webdav、FTP 等传输方式。
+[XMSLEEP](https://github.com/Tosencen/XMSLEEP)
+白噪声，一些声音已经内置，一些声音需要下载。
+[OpenTracks](https://codeberg.org/OpenTracksApp/OpenTracks)
+追踪你的运动轨迹，可以记录你的跑步轨迹。想要在地图上看需要 [OpenStreetMap 仪表板](https://codeberg.org/OpenTracksApp/OSMDashboard)。
+
+🏷[Delta Chat](https://github.com/deltachat/deltachat-android)
+🏷[ArcaneChat](https://github.com/ArcaneChat/android)
+ArcaneChat 是 Delta Chat 的第三方版本。
+
+工具集：
+野外[Trail Sense](https://github.com/kylecorry31/Trail-Sense)
+骰子等[桌游工具](https://github.com/mueller-ma/TabletopTools)
